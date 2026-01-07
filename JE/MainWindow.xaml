@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="100" Margin="140,195,0,0" VerticalAlignment="Top" Width="100" Source="/robot.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="136,74,0,0" VerticalAlignment="Top" Width="100" Source="/household-robot.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="133,315,0,0" VerticalAlignment="Top" Width="100" Source="/delivery-robot.png" RenderTransformOrigin="0.812,0.923"/>
-        <TextBlock HorizontalAlignment="Left" Margin="54,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="93" FontSize="25"><Run Language="en-gb" Text="Filter"/></TextBlock>
+        <Image x:Name="HouseholdImage" HorizontalAlignment="Left" Height="100" Margin="140,195,0,0" VerticalAlignment="Top" Width="100" Source="/robot.png"/>
+        <Image x:Name="AllRobotsImage" HorizontalAlignment="Left" Height="100" Margin="136,74,0,0" VerticalAlignment="Top" Width="100" Source="/household-robot.png"/>
+        <Image x:Name="DeliveryRobotImage" HorizontalAlignment="Left" Height="100" Margin="133,315,0,0" VerticalAlignment="Top" Width="100" Source="/delivery-robot.png" RenderTransformOrigin="0.812,0.923"/>
+        <TextBlock x:Name="FilterTextBlock" HorizontalAlignment="Left" Margin="54,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="93" FontSize="25"><Run Language="en-gb" Text="Filter"/></TextBlock>
         <RadioButton Content="ALL ROBOTS" HorizontalAlignment="Left" Margin="30,117,0,0" VerticalAlignment="Top" Name="AllRobotsRadio" Click="AllRobotsRadio_Click"/>
         <RadioButton Content="HOUSEHOLD" HorizontalAlignment="Left" Margin="30,238,0,0" VerticalAlignment="Top" Name="HouseholdRadio" Click="HouseholdRadio_Click"/>
         <RadioButton Content="DELIVERY" HorizontalAlignment="Left" Margin="28,358,0,0" VerticalAlignment="Top" Name="DeliveryRadio" Click="DeliveryRadio_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="294,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="144" FontSize="25"><Run Language="en-gb" Text="Robot List"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="558,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="160" FontSize="25"><Run Text="Robot "/><Run Language="en-gb" Text="Details"/></TextBlock>
+        <TextBlock x:Name="RobotListTextBlock" HorizontalAlignment="Left" Margin="294,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="144" FontSize="25"><Run Language="en-gb" Text="Robot List"/></TextBlock>
+        <TextBlock x:Name="RobotDetailsTextBlock" HorizontalAlignment="Left" Margin="558,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="160" FontSize="25"><Run Text="Robot "/><Run Language="en-gb" Text="Details"/></TextBlock>
         <ListBox x:Name="RobotListBox"
          Width="236" Height="338"
          HorizontalAlignment="Left" VerticalAlignment="Top"
