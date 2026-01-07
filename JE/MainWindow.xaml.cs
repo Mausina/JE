@@ -4,11 +4,17 @@ using System.Windows.Controls;
 
 namespace JE
 {
+
+
+
+    // github link https://github.com/Mausina/JE
+    //
+
+
     public partial class MainWindow : Window
     {
         private List<Robot> robots;
         private List<Robot> allRobots;
-
         public MainWindow()
         {
             InitializeComponent();
