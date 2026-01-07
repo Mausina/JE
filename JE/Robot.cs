@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JE
+﻿namespace JE
 {
     public abstract class Robot
     {
@@ -20,7 +14,7 @@ namespace JE
 
         public string DisplayBatteryInformation()
         {
-            return $"Battery: {CurrentPowerKWH:F2} / {PowerCapacityKWH:F2} kWh ({GetBatteryPercentage():F1}%)";
+            return $"battery information\ncapacity: {PowerCapacityKWH:F1} kWh\nCurrent power: {CurrentPowerKWH:F1} kWh\nBattery Level: {GetBatteryPercentage():F1}%";
         }
 
         public abstract string DescribeRobot();

@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Image HorizontalAlignment="Left" Height="100" Margin="140,195,0,0" VerticalAlignment="Top" Width="100" Source="/robot.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="136,74,0,0" VerticalAlignment="Top" Width="100" Source="/household-robot.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="133,315,0,0" VerticalAlignment="Top" Width="100" Source="/delivery-robot.png" RenderTransformOrigin="0.812,0.923"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="93" FontSize="25"><Run Language="en-gb" Text="Filter"/></TextBlock>
+        <RadioButton Content="ALL ROBOTS" HorizontalAlignment="Left" Margin="30,117,0,0" VerticalAlignment="Top" Name="AllRobotsRadio" Click="AllRobotsRadio_Click"/>
+        <RadioButton Content="HOUSEHOLD" HorizontalAlignment="Left" Margin="30,238,0,0" VerticalAlignment="Top" Name="HouseholdRadio" Click="HouseholdRadio_Click"/>
+        <RadioButton Content="DELIVERY" HorizontalAlignment="Left" Margin="28,358,0,0" VerticalAlignment="Top" Name="DeliveryRadio" Click="DeliveryRadio_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="294,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="144" FontSize="25"><Run Language="en-gb" Text="Robot List"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="558,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="160" FontSize="25"><Run Text="Robot "/><Run Language="en-gb" Text="Details"/></TextBlock>
+        <ListBox x:Name="RobotListBox"
+         Width="236" Height="338"
+         HorizontalAlignment="Left" VerticalAlignment="Top"
+         Margin="248,77,0,0"
+         SelectionChanged="RobotListBox_SelectionChanged"/>
+        <TextBox x:Name="RobotDetailsTextBox" HorizontalAlignment="Left" Margin="534,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="208" Height="338"/>
+        <Button x:Name="ChargeButton" Content="Charge" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="534,420,0,0" Click="ChargeButton_Click"/>
     </Grid>
 </Window>
